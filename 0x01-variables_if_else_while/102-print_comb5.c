@@ -5,7 +5,6 @@ int main(void) {
 
     for (num1 = 0; num1 <= 99; num1++) {
         for (num2 = num1; num2 <= 99; num2++) {
-            // Extract tens and ones digits for num1 and num2
             int tens1 = num1 / 10;
             int ones1 = num1 % 10;
             int tens2 = num2 / 10;
