@@ -1,32 +1,19 @@
 #include <stdio.h>
 
-int main(void) {
-    for (int num1 = 0; num1 <= 99; num1++) {
-        for (int num2 = num1 + 1; num2 <= 99; num2++) {
-         
-            int tens1 = num1 / 10;
-            int ones1 = num1 % 10;
-            int tens2 = num2 / 10;
-            int ones2 = num2 % 10;
+int main() {
+    int i, j;
 
-  
-            putchar('0' + tens1);
-            putchar('0' + ones1);
+    for (i = 0; i < 100; i++) {
+        for (j = i; j < 100; j++) {
+            putchar((i / 10) + '0');
+            putchar((i % 10) + '0');
             putchar(' ');
-            putchar('0' + tens2);
-            putchar('0' + ones2);
-
-        
-            if (!(num1 == 99 && num2 == 98)) {
-           
-                putchar(',');
-                putchar(' ');
-            }
+            putchar((j / 10) + '0');
+            putchar((j % 10) + '0');
+            putchar(',');
+            putchar(' ');
         }
     }
 
-    putchar('\n');
-
     return 0;
 }
-
