@@ -9,22 +9,13 @@ int main(void) {
             int ones1 = num1 % 10;
             int tens2 = num2 / 10;
             int ones2 = num2 % 10;
-
-            // Print tens digit of num1
             putchar('0' + tens1);
-            // Print ones digit of num1
             putchar('0' + ones1);
-            // Space separator
             putchar(' ');
-
-            // Print tens digit of num2
             putchar('0' + tens2);
-            // Print ones digit of num2
             putchar('0' + ones2);
-
-            // Check if it's not the last combination
+            
             if (num1 != 99 || num2 != 99) {
-                // Comma and space separator
                 putchar(',');
                 putchar(' ');
             }
