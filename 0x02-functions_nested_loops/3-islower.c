@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <main.h>
 
 	/**
 	 * _islower - checks for lowercase character
@@ -17,5 +16,5 @@
 	{
 		return (0);
 	}
-	_putchar('\n');
+	putchar('\n');
 }
