@@ -3,20 +3,18 @@
  * print_alphabet_x10 - print lowercase alphabet ten times
  */
 
-void print_alphabet_x10(void)
+void print_alphabet_x10(void) 
 {
 	int i;
-	char alphabet = 'a';
+	for (i = 0; i < 10; i++)
+       	{
+        char alphabet = 'a';  // Reset alphabet for each line
 
-	for(i=0; i <= 10; i++)
-	{
-	       	while (alphabet <= 'z')
-                {
-			putchar(alphabet);
-			alphabet++;
-                }
-                putchar('\n');
-	}
-                putchar('\n');
+        while (alphabet <= 'z') {
+            putchar(alphabet);
+            alphabet++;
         }
-        
+
+        putchar('\n');  // Print a newline after each line of the alphabet
+    }
+}        
