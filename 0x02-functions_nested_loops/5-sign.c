@@ -13,7 +13,7 @@ int print_sign(int num)
 		putchar('+');
 		putchar(',');
 		putchar(' ');
-		return (1);
+		ptchar('1');
 	}
 	else if (num == 0)
 	{
@@ -24,7 +24,8 @@ int print_sign(int num)
 	}
 	else
 	{
-		putchar('-');
+		putchar(',');
+                putchar(' ');
 		putchar(',');
                 putchar(' ');
 		return (-1);
