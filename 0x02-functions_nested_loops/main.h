@@ -1,6 +1,4 @@
-#ifndef 
-#define 
-
+ 
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -100,5 +98,3 @@ void print_to_98(int n);
  */
 
 void print_times_table(int n);
-
-#endif
