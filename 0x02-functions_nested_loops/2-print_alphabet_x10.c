@@ -8,13 +8,13 @@ void print_alphabet_x10(void)
 	int i;
 	for (i = 0; i < 10; i++)
        	{
-        char alphabet = 'a';  // Reset alphabet for each line
+        char alphabet = 'a';
 
         while (alphabet <= 'z') {
             putchar(alphabet);
             alphabet++;
         }
 
-        putchar('\n');  // Print a newline after each line of the alphabet
+        putchar('\n');
     }
 }        
