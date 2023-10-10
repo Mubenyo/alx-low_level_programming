@@ -10,17 +10,23 @@ int print_sign(int num)
 {
 	if (num > 0)
 	{
-		putchar('+, ');
+		putchar('+');
+		putchar(',');
+		putchar(' ');
 		return (1);
 	}
 	else if (num == 0)
 	{
-		putchar('0, ');
+		putchar('0');
+		putchar(',');
+                putchar(' ');
 		return (0);
 	}
 	else
 	{
-		putchar('-, ');
+		putchar('-');
+		putchar(',');
+                putchar(' ');
 		return (-1);
 	}
 }
