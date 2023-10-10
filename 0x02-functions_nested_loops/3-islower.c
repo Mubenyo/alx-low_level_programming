@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _islower Check if a character is a lowercase letter.
+ * Description :islower Check if a character is a lowercase letter.
  *
  * This function checks if the given character is a lowercase letter
  * in the ASCII character set.
