@@ -13,7 +13,7 @@ int print_sign(int num)
 		putchar('+');
 		putchar(',');
 		putchar(' ');
-		ptchar('1');
+		putchar('1');
 	}
 	else if (num == 0)
 	{
