@@ -1,10 +1,14 @@
 #include <stdio.h>
 
 /**
-* _islower : checks for lowercase character
-* @c: character to check
- * Return: 1 if lowercase, 0 if uppercase
-*/
+ * Check if a character is a lowercase letter.
+ *
+ * This function checks if the given character is a lowercase letter
+ * in the ASCII character set.
+ *
+ * @param c The character to be checked.
+ * @return 1 if the character is a lowercase letter, 0 otherwise.
+ */
 
 	int _islower(int c)
 	{
