@@ -14,6 +14,7 @@ int print_sign(int num)
 		putchar(',');
 		putchar(' ');
 		putchar('1');
+		return(1);
 	}
 	else if (num == 0)
 	{
