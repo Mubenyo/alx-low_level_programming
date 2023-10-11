@@ -18,7 +18,7 @@ int main(void)
 
 	printf("%li", a);
 
-	for (counter = 2; counter <= countto; counter++) 
+	for (counter = 2; counter <= countto; counter++)
 	{
 		printf(", %li", b);
 
@@ -38,6 +38,6 @@ int main(void)
 
 	printf("\n");
 
-	return 0;
+	return (0);
 }
 
