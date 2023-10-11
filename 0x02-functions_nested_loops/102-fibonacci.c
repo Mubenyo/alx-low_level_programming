@@ -5,23 +5,34 @@
  * Return: 0
  */
 
-int main(void)
-{
+#include <stdio.h>
+
+int main(void) {
     int counter;
     int countto = 50;
     long a = 1;
     long b = 2;
+    long temp;
 
-    for (counter = 1; counter <= countto; counter++)
-    {
-        printf("%li", a);
-        if (counter != countto)
-            printf(", ");
-        long temp = a;
-        a = b;
-        b += temp;
+    // Handle the first Fibonacci number
+    printf("%li", a);
+
+    for (counter = 2; counter <= countto; counter++) {
+        printf(", %li", b);
+
+        if (counter % 2 == 0) {
+            temp = a + b;
+            a = b;
+            b = temp;
+        } else {
+            temp = a + b;
+            a = b;
+            b = temp;
+        }
     }
+
     printf("\n");
 
-    return (0);
+    return 0;
 }
+
