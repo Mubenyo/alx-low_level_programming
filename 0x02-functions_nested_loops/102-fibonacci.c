@@ -14,7 +14,6 @@ int main(void) {
     long b = 2;
     long temp;
 
-    // Handle the first Fibonacci number
     printf("%li", a);
 
     for (counter = 2; counter <= countto; counter++) {
