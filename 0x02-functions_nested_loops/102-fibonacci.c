@@ -17,21 +17,23 @@ int main(void)
 
 	printf("%li", a);
 
-	for (counter = 2; counter <= countto; counter++) {
-        printf(", %li", b);
+	for (counter = 2; counter <= countto; counter++)
+	{
+		printf(", %li", b);
 
-        if (counter % 2 == 0)
-	{
-            temp = a + b;
-            a = b;
-            b = temp;
-        } else
-	{
-            temp = a + b;
-            a = b;
-            b = temp;
-        }
-    }
+		if (counter % 2 == 0)
+		{
+			temp = a + b;
+			a = b;
+			b = temp;
+        	}
+		else
+		{
+			temp = a + b;
+			a = b;
+			b = temp;
+		}
+	}
 
  	printf("\n");
 	
