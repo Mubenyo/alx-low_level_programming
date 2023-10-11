@@ -22,6 +22,8 @@ int main(void)
 	}
 	if (countto % 2 == 1)
 		printf("%li", a);
+		if (counter < 49)
+                        printf(", ");
 
 	printf("\n");
 
