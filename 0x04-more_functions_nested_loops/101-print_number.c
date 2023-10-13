@@ -1,18 +1,30 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
- * print_number - print an integer, without using long, arrays, or pointers
- * @n: number to be printed
+ * _putchar - Writes a character to standard output
+ * @c: The character to print
+ * Return: The number of characters printed
  */
+int _putchar(char c)
+{
+    return write(1, &c, 1);
+}
 
+/**
+ * print_number - Prints an integer
+ * @n: The integer to print
+ */
 void print_number(int n)
 {
-    if (n < 0)
-    {
-        putchar('-');
+    if (n < 0) {
+        _putchar('-');
         n = -n;
     }
-    if (n / 10)
+
+    if (n / 10 != 0) {
         print_number(n / 10);
-    putchar(n % 10 + '0');
+    }
+
+    _putchar('0' + n % 10);
 }
