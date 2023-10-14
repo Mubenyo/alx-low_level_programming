@@ -2,7 +2,7 @@
 
 int main() 
 {
-	int i, j;
+	int num1, num2;
 
 	for (num1 = 0; num1 <= 99; num1++) 
 	{
