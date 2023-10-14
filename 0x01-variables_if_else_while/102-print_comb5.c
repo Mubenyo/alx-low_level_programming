@@ -1,9 +1,15 @@
 #include <stdio.h>
 
 /**
-* program that prints all possible combinations of two two-digit numbers
+ * main - Entry point for the program.
+ *
+ * Description: This program prints all possible combinations of two two-digit
+ * numbers in the format "XX YY," separated by commas and spaces. It iterates
+ * through all two-digit numbers, ensuring that the second number is greater
+ * than or equal to the first number.
+ *
+ * Return: Always returns 0 to indicate successful execution.
  */
-
 
 int main(void)
 {
