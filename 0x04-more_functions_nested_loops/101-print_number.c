@@ -5,14 +5,14 @@
  * _putchar - Writes a character to standard output
  * @c: The character to print
  * Return: The number of characters printed
-
+*/
 
 
 int _putchar(char c) 
 {
     return write(1, &c, 1);
 }
-
+/*
 void print_number(int n)
 {
     if (n < 0)
@@ -27,8 +27,6 @@ void print_number(int n)
     _putchar(n % 10 + '0');
 }
 */
-#include "holberton.h"
-#include <stdio.h>
 
 /**
   * print_number - Prints an integer.
