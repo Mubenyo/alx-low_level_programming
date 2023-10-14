@@ -23,7 +23,7 @@ if ((year % 400 == 0) || (year % 4 == 0 && year % 100 !=  0))
 		printf("Remaining days: %d\n", 366 - day);
 
 
-
+}
 	else
 
 	{
