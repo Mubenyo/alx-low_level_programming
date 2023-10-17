@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point for the program.
@@ -24,15 +25,15 @@ int main(void)
 			int tens2 = num2 / 10;
 			int ones2 = num2 % 10;
 
-			putchar('0' + tens1);
-			putchar('0' + ones1);
-			putchar(' ');
-			putchar('0' + tens2);
-			putchar('0' + ones2);
+			_putchar('0' + tens1);
+			_putchar('0' + ones1);
+			_putchar(' ');
+			_putchar('0' + tens2);
+			_putchar('0' + ones2);
 			if (num1 != 98 || num2 != 99)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 	}
