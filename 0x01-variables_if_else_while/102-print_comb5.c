@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /*
  * File: 102-print_comb5.c
  * Auth: Brennan D Baraban
