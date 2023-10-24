@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * _isalpha - checks for alphabet character
  * @c: character to check
@@ -16,5 +16,5 @@ int _isalpha(int c)
 	{
 		return (0);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
