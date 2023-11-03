@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "main.h"
+
 
 /**
  * print_square - print a square of #'s given size
@@ -16,11 +18,11 @@ void print_square(int size)
 		{
 			for (column = 1; column <= size; column++)
 			{
-				putchar('#');
+				_putchar('#');
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 	else
-		putchar('\n');
+		_putchar('\n');
 }
