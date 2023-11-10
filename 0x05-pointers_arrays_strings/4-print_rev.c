@@ -7,10 +7,9 @@
 
 void print_rev(char *s)
 {
-
 	int length = 0;
 	int i;
-
+	
 	/* iterate to find length of string and point to last character */
 	while (*s)
 	{
@@ -24,6 +23,6 @@ void print_rev(char *s)
 		_putchar(*s);
 		s--;
 	}
-
+	
 	_putchar('\n');
 }
