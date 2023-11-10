@@ -21,9 +21,9 @@ void print_rev(char *s)
 	/* print string reversed */
 	for (i = length + 1; i > 0; i--)
 	{
-		putchar(*s);
+		_putchar(*s);
 		s--;
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }
