@@ -8,14 +8,13 @@
 void print_rev(char *s)
 {
 
-	int len = 0;
-	int i;
+	int len = 0, i;
 
 	/* iterate to find length of string and point to last character */
 	while (*s)
 	{
 		len++;
-		++s;
+		s++;
 	}
 
 	/* go back to character before null character */
