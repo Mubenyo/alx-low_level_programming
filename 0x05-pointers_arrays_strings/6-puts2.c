@@ -5,26 +5,33 @@
  * @s: string
  * Return: length
  */
-
-int _strlen(char *s)
+void puts2(char* str) {
+    int i = 0;
+    while (str[i] != '\0') {
+        _putchar(str[i]);
+        i += 2;
+    }
+    _putchar("\n");
+}
+/*int _strlen(char *s)
 {
-	int len = 0;
+	int length = 0;
 
 	while (*s != '\0')
 	{
-		len++;
+		length++;
 		s++;
 	}
 
-	return (len);
-}
+	return (length);
+}*/
 
 /**
  * puts2 - prints every second character of a string, followed by a new line
  * @str: string to print
  */
 
-void puts2(char *str)
+/*void puts2(char *str)
 {
 	int i;
 
@@ -32,4 +39,4 @@ void puts2(char *str)
 		_putchar(str[i]);
 
 	_putchar('\n');
-}
+}*/
