@@ -8,15 +8,15 @@
 
 int _strlen(char *s)
 {
-	int len = 0;
+	int length = 0;
 
 	while (*s != '\0')
 	{
-		len++;
+		length++;
 		s++;
 	}
 
-	return (len);
+	return (length);
 }
 
 /**
@@ -26,19 +26,19 @@ int _strlen(char *s)
 
 void puts_half(char *str)
 {
-	int idx;
-	int len = _strlen(str);
+	int i;
+	int length = _strlen(str);
 
 	/* find the index to start depending on even/odd amount of strlen */
 	if (len % 2 != 0)
-		idx = (len / 2) + 1;
+		i = (length / 2) + 1;
 	else
-		idx = (len / 2);
+		i = (length / 2);
 
-	while (idx < len)
+	while (i < length)
 	{
-		_putchar(*(str + idx));
-		idx++;
+		_putchar(*(str + i));
+		i++;
 	}
 	_putchar('\n');
 }
